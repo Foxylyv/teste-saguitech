@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,10 +29,12 @@ label {
     font-weight: bold;
 }
 
-input, textarea, button {
+input,
+textarea, 
+button {
     width: 100%;
     margin-top: 5px;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
@@ -40,6 +46,7 @@ button {
     border: none;
     margin-top: 15px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -52,4 +59,5 @@ button:hover {
     background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
+    display: none;
 }
